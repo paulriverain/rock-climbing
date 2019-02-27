@@ -37,9 +37,11 @@ kids_hash = {
 }
 end
 
+#tells number of belayers needed for stated party number
+#accounts for youth and older kid parties
 def num_belayers(party)
   puts "BELAYERS:"
-      i=0
+      # i=0
     kid_count = 0
     baby_count= 0
     kids_hash.values.each do |parties|
@@ -54,22 +56,21 @@ def num_belayers(party)
               baby_count +=1
             end
           end
+end
         end
             belays_kids = kid_count / 5.00
             belays_babies = baby_count / 3.00
             belays = belays_kids.ceil + belays_babies.ceil
-             binding.pry
-      # puts "For #{kids_hash.keys[i]}, You will need #{belays} belayers."
-    end
       puts "For party #{party}, You will need #{belays} belayers."
-      i+=1
-      kid_count = 0
-      baby_count= 0
+      # i+=1
+      # kid_count = 0
+      # baby_count= 0
        # nil
-       
 end
+# end
  # num_belayers
 
+#gives the # of (red&blue) harnesses for stated party #
 def num_harness(party)
   puts "HARNESSES:"
       # i=0
@@ -110,7 +111,7 @@ def kids_shoes(party)
        # binding.pry
       name = kid[:name]
       shoes = kid[:shoe_size]
-        shoe_list << "#{name} with #{shoes} size shoes."
+        shoe_list << "#{name} with size #{shoes} shoes."
              # binding.pry
              i+=1
      end
