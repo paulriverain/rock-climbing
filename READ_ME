@@ -1,0 +1,15 @@
+You have been hired by a rock climbing gym to make their birthday party registration process more fluid and easier to use.
+
+Given a hash containing data about each party, organize the groups to determine information that will help the gym prepare for the screaming masses of children.
+
+First, determine the number of belayers required for each party. Keep in mind that, for groups of children under 5 years old, three kids are assigned to one belayer. For groups 5y/o or older, there should be roughly 5 kids per belayer.
+
+Next, we will have to figure out the number of harnesses required for each party. Harnesses come in 2 sizes: small red harnesses and large blue harnesses. be sure each party has the correct number of harnesses given the attendance data.
+
+We will then want to determine the shoe sizes of each of the children in each group. Create a list of all the shoe sizes of a party with the child's name next to it. Calling a party as an argument should give you this list.
+
+Finally, we need to ensure that every child has a waver filled out by their parent or legal guardian. This part is very important because it ensure that the gym is protected in the case of any injuries that may occur.
+
+To run these functions, create an input section that asks the used what they need to know. Then run the functions accordingly to the given input. List out the commands that the user can choose from.
+
+As an added bonus, list out the 4 main rules we have hear at the rock climbing gym: 1) No Running, 2) No playing with the ropes, 3) Don't climb unless instructed to do so, and 4) Have Fun!!.

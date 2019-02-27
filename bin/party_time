@@ -1,0 +1,23 @@
+#!/usr/bin/env ruby
+
+require_relative "../lib/party_time"
+
+kids_hash = {
+  :party_one =>{
+    :facilitator => 'Erica',
+    :attendance => [
+# {name: '', age: '', wavers: 'true/false', harness: "blue/red", shoe_size: ''}
+    {name: 'Harry', age: 6, wavers: 'yes', harness: "red", shoe_size: 3},
+    {name: 'Frankie', age: 9, wavers: 'yes', harness: "blue", shoe_size: 7},
+    {name: 'Gale', age: 4, wavers: 'yes', harness: "red", shoe_size: 3},
+    {name: 'Rony', age: 4, wavers: 'no', harness: "red", shoe_size: 2},
+    {name: 'Julia', age: 10, wavers: 'yes', harness: "blue", shoe_size: 9},
+    {name: 'Sarrah', age: 3, wavers: 'no', harness: "red", shoe_size: 13},
+    {name: 'James', age: 3, wavers: 'yes', harness: "red", shoe_size: 2},
+    {name: 'Kevin', age: 5, wavers: 'yes', harness: "red", shoe_size: 3},
+    {name: 'Jessie', age: 11, wavers: 'yes', harness: "blue", shoe_size: 10}
+    ]
+  },
+  :party_two => "not booked yet"
+}
+run
