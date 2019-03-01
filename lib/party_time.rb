@@ -123,6 +123,29 @@ def kids_shoes(party)
 end
  # kids_shoes("2")
 
+#list out the kids in a given partie that don't have wavers
+def wavers(party)
+puts "WAVERS:"
+does_waver = ["Everyone is good to go."]
+no_waver =[]
+kids_hash.values.each do |parties|
+  next unless parties.is_a?(Hash)
+  if parties[:party_number] == (party)
+    # binding.pry
+    parties[:attendance].each do |kid|
+      # binding.pry
+      if kid[:wavers] == "no"
+        # binding.pry
+        no_waver << "#{kid[:name]} still needs a waver."
+        does_waver = []
+      end
+    end
+    end
+  end
+  does_waver << no_waver
+  puts does_waver.join("\n")
+end
+# wavers("1")
 
  def run
    puts "Please enter the party number here:"
@@ -133,6 +156,8 @@ end
     num_harness(num_input)
     puts
     kids_shoes(num_input)
+    puts
+    wavers(num_input)
     puts
  end
 
